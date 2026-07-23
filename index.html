@@ -39,9 +39,10 @@
             --color-teal: #2dd4bf;
             --color-dark: #121929;
             --color-dark2: #0b0f1a;
+            --color-dark-blue: #101624;
 
             /* Transition */
-            --duration-slow: 9000ms;
+            --duration-slow: 150ms;
 
             /* Animations */
             --animate-color-pulse: colorPulse 2s ease-in infinite;
@@ -312,22 +313,91 @@
         </section>
 
         <!-- Destination Section -->
-        <section class="bg-dark2">
+        <section class="bg-dark2 py-20">
             <div class="max-w-[1220px] mx-auto px-5 xl:px-0">
-                <div>
+                <div class="flex justify-between">
                     <div>
-                        <span>CROWD FAVORITES</span>
-                        <h2>Where everyone's flying this season</h2>
+                        <span class="font-roboto text-xs tracking-widest text-coral uppercase">Crowd Favorites</span>
+                        <h2 class="mt-2 font-fraunces font-semibold text-cream text-3xl sm:text-4xl">Where everyone's
+                            flying this season</h2>
                     </div>
-                    <div>
-                        <a href="#x">
+                    <div class="flex items-end">
+                        <a href="#x"
+                            class="flex items-center gap-1 text-sm text-teal duration-[var(--duration-slow)] hover:text-cream">
                             <span>See all destinations</span>
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </div>
                 </div>
-                <div>
-                    
+                <div class="mt-10 grid grid-cols-4 gap-6">
+                    <div class="border border-line rounded-2xl">
+                        <div class="relative">
+                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
+                            <span class="absolute right-3 top-3 rounded-full bg-amber px-3 py-1 font-roboto text-[11px] font-bold text-ink">DPS</span>
+                        </div>
+                        <div class="bg-dark-blue rounded-b-2xl px-5 py-4 flex items-center justify-between">
+                            <div>
+                                <h4 class="font-fraunces text-lg font-semibold text-cream">Bali, Indonesia</h4>
+                                <p class="font-roboto text-xs text-muted">From $890</p>
+                            </div>
+                            <div>
+                                <a href="#x">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-line rounded-2xl">
+                        <div class="relative">
+                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
+                            <span>DPS</span>
+                        </div>
+                        <div class="bg-dark-blue rounded-b-2xl">
+                            <div>
+                                <h4>Bali, Indonesia</h4>
+                                <p>From $890</p>
+                            </div>
+                            <div>
+                                <a href="#x">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-line rounded-2xl">
+                        <div class="relative">
+                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
+                            <span>DPS</span>
+                        </div>
+                        <div class="bg-dark-blue rounded-b-2xl">
+                            <div>
+                                <h4>Bali, Indonesia</h4>
+                                <p>From $890</p>
+                            </div>
+                            <div>
+                                <a href="#x">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-line rounded-2xl">
+                        <div class="relative">
+                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
+                            <span>DPS</span>
+                        </div>
+                        <div class="bg-dark-blue rounded-b-2xl">
+                            <div>
+                                <h4>Bali, Indonesia</h4>
+                                <p>From $890</p>
+                            </div>
+                            <div>
+                                <a href="#x">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
