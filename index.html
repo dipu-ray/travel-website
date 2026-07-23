@@ -36,6 +36,17 @@
             --color-line: #2a3350;
             --color-muted: #8d97b3;
             --duration-slow: 9000ms;
+
+            /* Animations */
+            --animate-color-pulse: colorPulse 2s ease-in infinite;
+            @keyframes colorPulse {
+                0%, 100% {
+                    background-color: #2dd4bf;
+                }
+                50% {
+                    background-color: #2dd4bf09;
+                }
+            }
         }
     </style>
 
@@ -137,9 +148,12 @@
             <div class="max-w-[1220px] mx-auto relative z-10">
                 <div class="pt-[80px]">
                     <div>
-                        <span class="bg-black text-[#2dd4bf] text-sm tracking-widest p-2 rounded-full">214 TRIPS DEPARTING THIS MONTH</span>
-                        <h1 class="text-red-500">Collect <span>departures</span>, not souvenirs.</h1>
-                        <p>WANDR designs slow, honest itineraries with local fixers and flexible fares — so the only thing you overpack is curiosity.</p>
+                        <span
+                            class="bg-black text-[#2dd4bf] text-[12px] tracking-widest py-[6px] rounded-full font-roboto relative pl-7 pe-4 before:content-[''] before:absolute before:left-3 before:top-[30%] before:-translate-y-[-30%] before:w-[7px] before:h-[7px] before:bg-[#2dd4bf] before:rounded-full before:animate-color-pulse">214
+                            TRIPS DEPARTING THIS MONTH</span>
+                        <h1>Collect <span>departures</span>, not souvenirs.</h1>
+                        <p>WANDR designs slow, honest itineraries with local fixers and flexible fares — so the only
+                            thing you overpack is curiosity.</p>
                     </div>
                     <div></div>
                 </div>
