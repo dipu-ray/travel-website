@@ -20,42 +20,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @theme {
-        /* Fonts */
-        --font-playfair: "Playfair Display", serif;
-        --font-lora: "Lora", serif;
-        --font-inter: "Inter", sans-serif;
-        --font-jakarta: "Plus Jakarta Sans", sans-serif;
-        --font-roboto: "Roboto Mono", monospace;
+            /* Fonts */
+            --font-playfair: "Playfair Display", serif;
+            --font-lora: "Lora", serif;
+            --font-inter: "Inter", sans-serif;
+            --font-jakarta: "Plus Jakarta Sans", sans-serif;
+            --font-roboto: "Roboto Mono", monospace;
 
-        /* Colors */
-        --color-amber: #FFB84D;
-        --color-magenta: #E8579B;
-        --color-coral: #FF6B4A;
-        --color-ink: #1A1C23;
-        --color-cream: #f5f1e8;
-        --color-line: #2a3350;
-        --color-muted: #8d97b3;
-        --duration-slow: 9000ms;
-
-        /* Animations */
-        --animate-bg-slide: bgSlider 12s infinite ease-in-out;
-        @keyframes bgSlider {
-            0% {
-                    background-image: url('/assets/images/backgrounds/hero-bg-1.png');
-            }
-            25% {
-                background-image: url('https://images.unsplash.com/photo-1475066392170-59d55d96fe51?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D');
-            }
-            50% {
-                background-image: url('https://images.unsplash.com/photo-1612415491873-144fd5e03169?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbCUyMGNpdHl8ZW58MHx8MHx8fDA%3D');
-            }
-            75% {
-                background-image: url('https://plus.unsplash.com/premium_photo-1682629789675-5a2ecb3db5c9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbCUyMGNpdHl8ZW58MHx8MHx8fDA%3D');
-            }
-            100% {
-                background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D');
-            }
-        }
+            /* Colors */
+            --color-amber: #FFB84D;
+            --color-magenta: #E8579B;
+            --color-coral: #FF6B4A;
+            --color-ink: #1A1C23;
+            --color-cream: #f5f1e8;
+            --color-line: #2a3350;
+            --color-muted: #8d97b3;
+            --duration-slow: 9000ms;
         }
     </style>
 
@@ -149,9 +129,8 @@
 
     <main>
         <!-- Hero Section -->
-        <section
-            class="relative hero-section w-full h-[80vh] bg-cover bg-center flex items-center justify-center animate-bg-slide bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))]">
-            <div class="absolute z-0 top-0 left-0 w-[100%] h-[100%] bg-[rgba(0,0,0,0.5)]"></div>
+        <section class="hero-section w-full h-[80vh] bg-[url('/assets/images/backgrounds/hero-bg-5.png')] bg-cover bg-center">
+            <div class="absolute z-0 top-0 left-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(0,0,0,10)_20%,rgba(100,50,50,0.5)_100%)]"></div>
             <div class="max-w-[1220px] mx-auto z-10">
                 <p class="text-red-500">Lorem ipsum dolor sit amet.</p>
             </div>
