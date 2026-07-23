@@ -39,7 +39,7 @@
             --color-teal: #2dd4bf;
             --color-dark: #121929;
 
-            /* Transitions */
+            /* Transition */
             --duration-slow: 9000ms;
 
             /* Animations */
@@ -50,6 +50,15 @@
                 }
                 50% {
                     background-color: #2dd4bf50;
+                }
+            }
+            --animate-marquee: marquee 25s linear infinite;
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0%);
+                }
+                100% {
+                    transform: translateX(-100%);
                 }
             }
         }
@@ -157,34 +166,50 @@
                             class="bg-dark text-teal text-[12px] tracking-widest py-[6px] rounded-full font-roboto relative pl-7 pe-4 before:content-[''] before:absolute before:left-3 before:top-[30%] before:-translate-y-[-30%] before:w-[7px] before:h-[7px] before:bg-dark before:rounded-full before:animate-color-pulse">
                             214 TRIPS DEPARTING THIS MONTH
                         </span>
-                        <h1 class="mt-7 text-[3rem] md:text-[3.5rem] font-fraunces font-semibold text-base/12 md:text-base/14">
+                        <h1
+                            class="mt-7 text-[3rem] md:text-[3.5rem] font-fraunces font-semibold text-base/12 md:text-base/14">
                             Collect <span class="italic text-coral">departures</span>,
                             <br>
                             not souvenirs.
                         </h1>
-                        <p class="mt-5 text-muted text-lg md:w-[50%] lg:w-[80%]">WANDR designs slow, honest itineraries with local fixers and flexible fares — so
+                        <p class="mt-5 text-muted text-lg md:w-[50%] lg:w-[80%]">WANDR designs slow, honest itineraries
+                            with local fixers and flexible fares — so
                             the only
                             thing you overpack is curiosity.</p>
-                        <div class="bg-dark rounded-2xl md:w-[500px] lg:w-[500px] xl:w-[550px] mt-10 border border-line">
+                        <div
+                            class="bg-dark rounded-2xl md:w-[500px] lg:w-[500px] xl:w-[550px] mt-10 border border-line">
                             <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 gap-y-5">
                                 <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider" for="from">From</label>
-                                    <input class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber" type="text" id="from" value="Dhaka (DAC)">
+                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
+                                        for="from">From</label>
+                                    <input
+                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber"
+                                        type="text" id="from" value="Dhaka (DAC)">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider" for="destination">Destination</label>
-                                    <input class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber placeholder:text-muted" type="text" id="destination" placeholder="Anywhere, really">
+                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
+                                        for="destination">Destination</label>
+                                    <input
+                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber placeholder:text-muted"
+                                        type="text" id="destination" placeholder="Anywhere, really">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider" for="depart">Depart</label>
-                                    <input class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber" type="date" id="depart">
+                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
+                                        for="depart">Depart</label>
+                                    <input
+                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber"
+                                        type="date" id="depart">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider" for="travelers">Travelers</label>
-                                    <input class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber" type="number" id="travelers" value="2">
+                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
+                                        for="travelers">Travelers</label>
+                                    <input
+                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber"
+                                        type="number" id="travelers" value="2">
                                 </div>
                             </div>
-                            <a href="#x" class="inline-flex items-center justify-center gap-3 text-sm py-[16px] w-[100%] bg-red-500 rounded-b-2xl bg-gradient-to-r from-coral to-magenta text-black font-semibold hover:brightness-110 transition">
+                            <a href="#x"
+                                class="inline-flex items-center justify-center gap-3 text-sm py-[16px] w-[100%] bg-red-500 rounded-b-2xl bg-gradient-to-r from-coral to-magenta text-black font-semibold hover:brightness-110 transition">
                                 <span>Search fares</span>
                                 <i class="fa-solid fa-arrow-right text-[.7rem]"></i>
                             </a>
@@ -192,7 +217,8 @@
                     </div>
                     <div class="relative">
                         <div>
-                            <div class="absolute left-[50%] -translate-x-[50%] bottom-[-70px] bg-dark rounded-2xl w-[100%] sm:w-[400px] border border-line px-6 py-5 -rotate-2">
+                            <div
+                                class="absolute left-[50%] -translate-x-[50%] bottom-[-70px] bg-dark rounded-2xl w-[100%] sm:w-[400px] border border-line px-6 py-5 -rotate-2">
                                 <div class="flex justify-between uppercase font-roboto text-[.8rem]">
                                     <span class="text-muted">Boarding Pass</span>
                                     <span class="text-teal">Confirmed</span>
@@ -203,7 +229,9 @@
                                         <span class="font-roboto text-muted text-[.7rem]">Dhaka</span>
                                     </h2>
                                     <div>
-                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" class="text-coral"><path d="M2 16L22 8L15 22L13 14L2 16Z" fill="currentColor"></path></svg>
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" class="text-coral">
+                                            <path d="M2 16L22 8L15 22L13 14L2 16Z" fill="currentColor"></path>
+                                        </svg>
                                     </div>
                                     <h2 class="flex flex-col text-base/5 uppercase">
                                         <span class="font-fraunces text-[1.4rem] font-semibold">JPN</span>
@@ -217,7 +245,8 @@
                                     <span>Class: Wanderer</span>
                                 </div>
                             </div>
-                            <div class="absolute left-[52%] -translate-x-[50%] bottom-[-105px] bg-dark rounded-2xl w-[95%] sm:w-[330px] border border-line px-6 py-5 -rotate-[-2deg]">
+                            <div
+                                class="absolute left-[52%] -translate-x-[50%] bottom-[-105px] bg-dark rounded-2xl w-[95%] sm:w-[330px] border border-line px-6 py-5 -rotate-[-2deg]">
                                 <div class="flex justify-between uppercase font-roboto text-[.8rem]">
                                     <span class="text-muted">Boarding Pass</span>
                                     <span class="text-teal">Confirmed</span>
@@ -228,7 +257,9 @@
                                         <span class="font-roboto text-muted text-[.7rem]">Dhaka</span>
                                     </h2>
                                     <div>
-                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" class="text-coral"><path d="M2 16L22 8L15 22L13 14L2 16Z" fill="currentColor"></path></svg>
+                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" class="text-coral">
+                                            <path d="M2 16L22 8L15 22L13 14L2 16Z" fill="currentColor"></path>
+                                        </svg>
                                     </div>
                                     <h2 class="flex flex-col text-base/5 uppercase">
                                         <span class="font-fraunces text-[1.4rem] font-semibold">JPN</span>
@@ -244,6 +275,37 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite Marquee Cities Section -->
+        <section>
+            <div class="w-full bg-[#0b0f19] py-4 overflow-hidden relative flex border-y border-gray-800">
+                <div
+                    class="flex gap-12 shrink-0 items-center justify-around min-w-full animate-[marquee_25s_linear_infinite] text-xs font-bold tracking-widest uppercase">
+                    <span class="text-teal-400">Cape Town</span> <span class="text-gray-600">•</span>
+                    <span class="text-amber-500">Lisbon</span> <span class="text-gray-600">•</span>
+                    <span class="text-pink-400">Queenstown</span> <span class="text-gray-600">•</span>
+                    <span class="text-orange-400">Bali</span> <span class="text-gray-600">•</span>
+                    <span class="text-cyan-400">Santorini</span> <span class="text-gray-600">•</span>
+                    <span class="text-yellow-400">Kyoto</span>
+                    <span class="text-gray-600">•</span>
+                    <span class="text-purple-400">Reykjavik</span> <span class="text-gray-600">•</span>
+                    <span class="text-orange-300 me-10">Machu Picchu</span>
+                </div>
+                <div class="flex gap-12 shrink-0 items-center justify-around min-w-full animate-[marquee_25s_linear_infinite] text-xs font-bold tracking-widest uppercase"
+                    aria-hidden="true">
+                    <span class="text-gray-600">•</span>
+                    <span class="text-teal-400">Cape Town</span> <span class="text-gray-600">•</span>
+                    <span class="text-amber-500">Lisbon</span> <span class="text-gray-600">•</span>
+                    <span class="text-pink-400">Queenstown</span> <span class="text-gray-600">•</span>
+                    <span class="text-orange-400">Bali</span> <span class="text-gray-600">•</span>
+                    <span class="text-cyan-400">Santorini</span> <span class="text-gray-600">•</span>
+                    <span class="text-yellow-400">Kyoto</span>
+                    <span class="text-gray-600">•</span>
+                    <span class="text-purple-400">Reykjavik</span> <span class="text-gray-600">•</span>
+                    <span class="text-orange-300">Machu Picchu</span>
                 </div>
             </div>
         </section>
