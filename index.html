@@ -74,6 +74,7 @@
 </head>
 
 <body class="bg-ink font-inter text-cream antialiased">
+    <!-- Header -->
     <header>
         <nav class="fixed w-[100%] top-0 z-100 border-b border-line bg-ink/85 backdrop-blur px-5 py-4">
             <div class="max-w-[1220px] mx-auto flex flex-wrap justify-between items-center">
@@ -157,6 +158,7 @@
         </nav>
     </header>
 
+    <!-- Main -->
     <main>
         <!-- Hero Section -->
         <section
@@ -523,6 +525,25 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="bg-panel">
+            <div class="max-w-[1220px] mx-auto px-5 xl:px-0 pt-14 pb-16">
+                <div class="border border-line px-6 sm:px-14 py-10 rounded-2xl flex flex-col lg:flex-row items-center gap-6 overflow-hidden text-center lg:text-left md:justify-between">
+                    <div class="w-[100%] lg:w-[50%]">
+                        <span class="font-roboto text-xs tracking-[.3em] text-teal">NEWSLETTER · BOARDING GROUP A</span>
+                        <h3 class="mt-2 font-fraunces text-3xl font-semibold text-cream">Get fares before they take off.</h3>
+                        <p class="mt-1 text-sm text-muted">One email a week. Real deals, zero spam, easy unsubscribe.</p>
+                    </div>
+                    <form class="w-[100%] sm:w-[500px] lg:w-[45%] xl:w-[40%] flex flex-col sm:flex-row gap-3">
+                        <input type="email" class="w-[100%] flex-1 rounded-full border border-line bg-dark2 px-5 py-3 text-sm text-cream placeholder:text-muted focus:outline-none focus:border-amber focus:ring-1 focus:ring-amber focus:ring-offset-2 focus:ring-offset-panel" placeholder="you@email.com" required>
+                        <button type="submit" class="shrink-0 rounded-full bg-gradient-to-r from-amber to-coral px-6 py-3 text-sm font-semibold text-ink hover:brightness-110">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
