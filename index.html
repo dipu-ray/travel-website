@@ -40,9 +40,12 @@
             --color-dark: #121929;
             --color-dark2: #0b0f1a;
             --color-dark-blue: #101624;
+            --color-panel: #121826;
 
-            /* Transition */
-            --duration-slow: 150ms;
+            /* Transitions */
+            --duration-slow: 100ms;
+            --duration-m-slow: 300ms;
+            --duration-l-slow: 600ms;
 
             /* Animations */
             --animate-color-pulse: colorPulse 2s ease-in infinite;
@@ -72,7 +75,7 @@
 
 <body class="bg-ink font-inter text-cream antialiased">
     <header>
-        <nav class="sticky top-0 z-100 border-b border-line bg-ink/85 backdrop-blur px-5 py-4">
+        <nav class="fixed w-[100%] top-0 z-100 border-b border-line bg-ink/85 backdrop-blur px-5 py-4">
             <div class="max-w-[1220px] mx-auto flex flex-wrap justify-between items-center">
                 <a href="index.html" class="text-xl font-bold flex items-center gap-2">
                     <div
@@ -157,12 +160,12 @@
     <main>
         <!-- Hero Section -->
         <section
-            class="relative hero-section w-full h-[100%] bg-[url('/assets/images/backgrounds/hero-bg.png')] bg-cover bg-center z-0 px-5 pb-[200px] lg:pb-[100px]">
+            class="relative hero-section w-full h-[100%] bg-[url('/assets/images/backgrounds/hero-bg.png')] bg-cover bg-center z-0 px-5 pt-[70px] pb-[190px] lg:pb-[100px]">
             <div
                 class="absolute z-0 top-0 left-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(11,15,26,10)_20%,rgba(100,50,50,0.5)_100%)]">
             </div>
             <div class="max-w-[1220px] mx-auto relative z-10">
-                <div class="pt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-40 lg:gap-4 items-center">
+                <div class="pt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-35 lg:gap-4 items-center">
                     <div>
                         <span
                             class="bg-dark text-teal text-[12px] tracking-widest py-[6px] rounded-full font-roboto relative pl-7 pe-4 before:content-[''] before:absolute before:left-3 before:top-[30%] before:-translate-y-[-30%] before:w-[7px] before:h-[7px] before:bg-dark before:rounded-full before:animate-color-pulse">
@@ -315,7 +318,7 @@
         <!-- Destination Section -->
         <section class="bg-dark2 py-20">
             <div class="max-w-[1220px] mx-auto px-5 xl:px-0">
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col lg:flex-row gap-3 lg:gap-0">
                     <div>
                         <span class="font-roboto text-xs tracking-widest text-coral uppercase">Crowd Favorites</span>
                         <h2 class="mt-2 font-fraunces font-semibold text-cream text-3xl sm:text-4xl">Where everyone's
@@ -329,73 +332,134 @@
                         </a>
                     </div>
                 </div>
-                <div class="mt-10 grid grid-cols-4 gap-6">
-                    <div class="border border-line rounded-2xl">
-                        <div class="relative">
-                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
-                            <span class="absolute right-3 top-3 rounded-full bg-amber px-3 py-1 font-roboto text-[11px] font-bold text-ink">DPS</span>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="ds-card group border border-line rounded-2xl">
+                        <div class="relative overflow-hidden">
+                            <img class="rounded-t-2xl duration-[var(--duration-l-slow)] group-hover:scale-110 group-hover:rounded-[55px]"
+                                src="assets/images/content/destination-s1.png" alt="Buildings">
+                            <span
+                                class="absolute right-3 top-3 rounded-full bg-amber px-3 py-1 font-roboto text-[11px] font-bold text-ink">DPS</span>
+                            <div
+                                class="absolute left-0 bottom-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(11,15,26,15)_10%,rgba(128,128,128,.1)_80%)]">
+                            </div>
                         </div>
-                        <div class="bg-dark-blue rounded-b-2xl px-5 py-4 flex items-center justify-between">
+                        <div class="bg-dark-blue rounded-b-2xl px-5 flex items-center justify-between h-[95px]">
                             <div>
                                 <h4 class="font-fraunces text-lg font-semibold text-cream">Bali, Indonesia</h4>
                                 <p class="font-roboto text-xs text-muted">From $890</p>
                             </div>
                             <div>
-                                <a href="#x">
+                                <a href="#x"
+                                    class="arrpw-1 inline-flex items-center justify-center text-[.65rem] border border-line w-[36px] h-[36px] rounded-full duration-[var(--duration-m-slow)] group-hover:border-amber group-hover:text-amber">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="border border-line rounded-2xl">
-                        <div class="relative">
-                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
-                            <span>DPS</span>
+                    <div class="ds-card group border border-line rounded-2xl">
+                        <div class="relative overflow-hidden">
+                            <img class="rounded-t-2xl duration-[var(--duration-l-slow)] group-hover:scale-110 group-hover:rounded-[55px]"
+                                src="assets/images/content/destination-s2.png" alt="City View">
+                            <span
+                                class="absolute right-3 top-3 rounded-full bg-teal px-3 py-1 font-roboto text-[11px] font-bold text-ink">JTR</span>
+                            <div
+                                class="absolute left-0 bottom-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(11,15,26,15)_10%,rgba(128,128,128,.1)_80%)]">
+                            </div>
                         </div>
-                        <div class="bg-dark-blue rounded-b-2xl">
+                        <div class="bg-dark-blue rounded-b-2xl px-5 flex items-center justify-between h-[95px]">
                             <div>
-                                <h4>Bali, Indonesia</h4>
-                                <p>From $890</p>
+                                <h4 class="font-fraunces text-lg font-semibold text-cream">Santorini, Greece</h4>
+                                <p class="font-roboto text-xs text-muted">From $1,240</p>
                             </div>
                             <div>
-                                <a href="#x">
+                                <a href="#x"
+                                    class="arrpw-1 inline-flex items-center justify-center text-[.65rem] border border-line w-[36px] h-[36px] rounded-full duration-[var(--duration-m-slow)] group-hover:border-teal group-hover:text-teal">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="border border-line rounded-2xl">
-                        <div class="relative">
-                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
-                            <span>DPS</span>
+                    <div class="ds-card group border border-line rounded-2xl">
+                        <div class="relative overflow-hidden">
+                            <img class="rounded-t-2xl duration-[var(--duration-l-slow)] group-hover:scale-110 group-hover:rounded-[55px]"
+                                src="assets/images/content/destination-s3.png" alt="Mountain">
+                            <span
+                                class="absolute right-3 top-3 rounded-full bg-magenta px-3 py-1 font-roboto text-[11px] font-bold text-ink">UKY</span>
+                            <div
+                                class="absolute left-0 bottom-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(11,15,26,15)_10%,rgba(128,128,128,.1)_80%)]">
+                            </div>
                         </div>
-                        <div class="bg-dark-blue rounded-b-2xl">
+                        <div class="bg-dark-blue rounded-b-2xl px-5 flex items-center justify-between h-[95px]">
                             <div>
-                                <h4>Bali, Indonesia</h4>
-                                <p>From $890</p>
+                                <h4 class="font-fraunces text-lg font-semibold text-cream">Kyoto, Japan</h4>
+                                <p class="font-roboto text-xs text-muted">From $1,480</p>
                             </div>
                             <div>
-                                <a href="#x">
+                                <a href="#x"
+                                    class="arrpw-1 inline-flex items-center justify-center text-[.65rem] border border-line w-[36px] h-[36px] rounded-full duration-[var(--duration-m-slow)] group-hover:border-magenta group-hover:text-magenta">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="border border-line rounded-2xl">
-                        <div class="relative">
-                            <img class="rounded-t-2xl" src="assets/images/content/destination-s1.png" alt="Buildings">
-                            <span>DPS</span>
+                    <div class="ds-card group border border-line rounded-2xl">
+                        <div class="relative overflow-hidden">
+                            <img class="rounded-t-2xl duration-[var(--duration-l-slow)] group-hover:scale-110 group-hover:rounded-[55px]"
+                                src="assets/images/content/destination-s4.png" alt="Road in Forest">
+                            <span
+                                class="absolute right-3 top-3 rounded-full bg-coral px-3 py-1 font-roboto text-[11px] font-bold text-ink">RKV</span>
+                            <div
+                                class="absolute left-0 bottom-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(11,15,26,15)_10%,rgba(128,128,128,.1)_80%)]">
+                            </div>
                         </div>
-                        <div class="bg-dark-blue rounded-b-2xl">
+                        <div class="bg-dark-blue rounded-b-2xl px-5 flex items-center justify-between h-[95px]">
                             <div>
-                                <h4>Bali, Indonesia</h4>
-                                <p>From $890</p>
+                                <h4 class="font-fraunces text-lg font-semibold text-cream">Reykjavik, Iceland</h4>
+                                <p class="font-roboto text-xs text-muted">From $1,120</p>
                             </div>
                             <div>
-                                <a href="#x">
+                                <a href="#x"
+                                    class="arrpw-1 inline-flex items-center justify-center text-[.65rem] border border-line w-[36px] h-[36px] rounded-full duration-[var(--duration-m-slow)] group-hover:border-coral group-hover:text-coral">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="bg-panel border-y border-line py-15 md:py-23">
+            <div class="max-w-[1220px] mx-auto px-5 xl:px-0">
+                <span class="font-roboto text-xs tracking-widest text-amber uppercase">WHY WANDR</span>
+                <h2 class="mt-[6px] font-fraunces font-semibold text-cream text-3xl sm:text-4xl">Fewer checkboxes. More runway.</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+                    <div>
+                        <div class="bg-coral/15 text-coral inline-flex items-center justify-center w-[50px] h-[50px] text-lg rounded-full">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-fraunces text-xl font-semibold text-cream">Curated routes</h4>
+                            <p class="mt-2 text-sm text-muted">Every itinerary is walked first by a WANDR trip designer, not generated from a spreadsheet.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-teal/15 text-teal inline-flex items-center justify-center w-[50px] h-[50px] text-lg rounded-full">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-fraunces text-xl font-semibold text-cream">Local fixers</h4>
+                            <p class="mt-2 text-sm text-muted">On-the-ground contacts in every city who pick up the phone, day or night.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-magenta/15 text-magenta inline-flex items-center justify-center w-[50px] h-[50px] text-lg rounded-full">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-fraunces text-xl font-semibold text-cream">Flexible fares</h4>
+                            <p class="mt-2 text-sm text-muted">Free date changes up to 14 days out, because plans — and weather — shift.</p>
                         </div>
                     </div>
                 </div>
