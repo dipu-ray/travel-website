@@ -35,8 +35,20 @@
 }
 
 @media screen and (max-width: 1024px) {
+    /* Navbar */
     .active::after {
         transform: translateX(-50%);
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .fc-container1 {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .fc-container2 {
+        flex-direction: column;
+        gap: 5px;
     }
 }
