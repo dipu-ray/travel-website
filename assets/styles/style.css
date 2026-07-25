@@ -34,7 +34,9 @@
     background-color: #FFB84D;
 }
 
+/* Responsive for Large Tab or Small Laptop */
 @media screen and (max-width: 1024px) {
+
     /* Navbar */
     .active::after {
         transform: translateX(-50%);
@@ -42,11 +44,15 @@
     }
 }
 
+/* Responsive for Small Phone Sizes */
 @media screen and (max-width: 360px) {
+
+    /* Footer */
     .fc-container1 {
         flex-direction: column-reverse;
         gap: 10px;
     }
+
     .fc-container2 {
         flex-direction: column;
         gap: 5px;
