@@ -41,6 +41,7 @@
             --color-dark2: #0b0f1a;
             --color-dark-blue: #101624;
             --color-panel: #121826;
+            --color-panel2: #1b2233;
 
             /* Transitions */
             --duration-slow: 100ms;
@@ -160,126 +161,95 @@
 
     <!-- Main -->
     <main>
-        <!-- Hero Section -->
-        <section
-            class="relative hero-section w-full h-[100%] bg-[url('/assets/images/backgrounds/hero-bg.png')] bg-cover bg-center z-0 px-5 pt-[70px] pb-[190px] lg:pb-[100px]">
-            <div
-                class="absolute z-0 top-0 left-0 w-[100%] h-[100%] bg-[linear-gradient(360deg,rgba(11,15,26,10)_20%,rgba(100,50,50,0.5)_100%)]">
-            </div>
-            <div class="max-w-[1220px] mx-auto relative z-10">
-                <div class="pt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-35 lg:gap-4 items-center">
-                    <div>
-                        <span
-                            class="bg-dark text-teal text-[12px] tracking-widest py-[6px] rounded-full font-roboto relative pl-7 pe-4 before:content-[''] before:absolute before:left-3 before:top-[30%] before:-translate-y-[-30%] before:w-[7px] before:h-[7px] before:bg-dark before:rounded-full before:animate-color-pulse">
-                            214 TRIPS DEPARTING THIS MONTH
-                        </span>
-                        <h1
-                            class="mt-7 text-[3rem] md:text-[3.5rem] font-fraunces font-semibold text-base/12 md:text-base/14">
-                            Collect <span class="italic text-coral">departures</span>,
-                            <br>
-                            not souvenirs.
-                        </h1>
-                        <p class="mt-5 text-muted text-lg md:w-[50%] lg:w-[80%]">WANDR designs slow, honest itineraries
-                            with local fixers and flexible fares — so
-                            the only
-                            thing you overpack is curiosity.</p>
-                        <div
-                            class="bg-dark rounded-2xl md:w-[500px] lg:w-[500px] xl:w-[550px] mt-10 border border-line">
-                            <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 gap-y-5">
-                                <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
-                                        for="from">From</label>
-                                    <input
-                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber"
-                                        type="text" id="from" value="Dhaka (DAC)">
-                                </div>
-                                <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
-                                        for="destination">Destination</label>
-                                    <input
-                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber placeholder:text-muted"
-                                        type="text" id="destination" placeholder="Anywhere, really">
-                                </div>
-                                <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
-                                        for="depart">Depart</label>
-                                    <input
-                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber"
-                                        type="date" id="depart">
-                                </div>
-                                <div class="flex flex-col">
-                                    <label class="text-[.65rem] text-muted font-roboto uppercase tracking-wider"
-                                        for="travelers">Travelers</label>
-                                    <input
-                                        class="text-[.85rem] border-b border-line py-2 focus:outline-none focus:border-b focus:border-amber"
-                                        type="number" id="travelers" value="2">
-                                </div>
-                            </div>
-                            <a href="#x"
-                                class="inline-flex items-center justify-center gap-3 text-sm py-[16px] w-[100%] rounded-b-2xl bg-gradient-to-r from-coral to-magenta text-black font-semibold hover:brightness-110 transition">
-                                <span>Search fares</span>
-                                <i class="fa-solid fa-arrow-right text-[.7rem]"></i>
-                            </a>
+        <!-- Explore Destinations Section -->
+        <section class="bg-dark2">
+            <div class="max-w-[1220px] mx-auto px-5 xl:px-0 pt-30 pb-15">
+                <span class="font-roboto text-xs tracking-widest text-coral">DESTINATIONS</span>
+                <h2 class="font-fraunces mt-[5px] font-display text-4xl font-semibold text-cream sm:text-5xl">Pick a gate, any gate.</h2>
+                <p class="mt-4 max-w-xl text-muted">Twelve routes our trip designers can't stop recommending — filter by region or scroll the departures board below.</p>
+                <div class="border border-line rounded-2xl w-[100%] lg:w-[800px] mx-auto overflow-hidden mt-12">
+                    <div class="flex items-center justify-between bg-panel2 px-4 py-2.5 font-roboto text-[11px] tracking-widest text-amber">
+                        <span>DEPARTURES BOARD</span>
+                        <span>DAC · TERMINAL 1</span>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">DPS</span>
+                            <span class="inline-block flex-1 px-3 text-cream">BALI</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">ASIA</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
                         </div>
                     </div>
-                    <div class="relative">
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
                         <div>
-                            <div
-                                class="absolute left-[50%] -translate-x-[50%] bottom-[-70px] bg-dark rounded-2xl w-[100%] sm:w-[400px] border border-line px-6 py-5 -rotate-2">
-                                <div class="flex justify-between uppercase font-roboto text-[.8rem]">
-                                    <span class="text-muted">Boarding Pass</span>
-                                    <span class="text-teal">Confirmed</span>
-                                </div>
-                                <div class="flex items-center justify-between my-4">
-                                    <h2 class="flex flex-col text-base/5 uppercase">
-                                        <span class="font-fraunces text-[1.4rem] font-semibold">DAC</span>
-                                        <span class="font-roboto text-muted text-[.7rem]">Dhaka</span>
-                                    </h2>
-                                    <div>
-                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" class="text-coral">
-                                            <path d="M2 16L22 8L15 22L13 14L2 16Z" fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                    <h2 class="flex flex-col text-base/5 uppercase">
-                                        <span class="font-fraunces text-[1.4rem] font-semibold">JPN</span>
-                                        <span class="font-roboto text-muted text-[.7rem]">Japan</span>
-                                    </h2>
-                                </div>
-                                <div class="w-[100%] h-[1px] bg-line"></div>
-                                <div class="mt-3 flex justify-between text-[.65rem] uppercase text-muted font-roboto">
-                                    <span>Seat 22C</span>
-                                    <span>Gate 12</span>
-                                    <span>Class: Wanderer</span>
-                                </div>
-                            </div>
-                            <div
-                                class="absolute left-[52%] -translate-x-[50%] bottom-[-105px] bg-dark rounded-2xl w-[95%] sm:w-[330px] border border-line px-6 py-5 -rotate-[-2deg]">
-                                <div class="flex justify-between uppercase font-roboto text-[.8rem]">
-                                    <span class="text-muted">Boarding Pass</span>
-                                    <span class="text-teal">Confirmed</span>
-                                </div>
-                                <div class="flex items-center justify-between my-4">
-                                    <h2 class="flex flex-col text-base/5 uppercase">
-                                        <span class="font-fraunces text-[1.4rem] font-semibold">DAC</span>
-                                        <span class="font-roboto text-muted text-[.7rem]">Dhaka</span>
-                                    </h2>
-                                    <div>
-                                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" class="text-coral">
-                                            <path d="M2 16L22 8L15 22L13 14L2 16Z" fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                    <h2 class="flex flex-col text-base/5 uppercase">
-                                        <span class="font-fraunces text-[1.4rem] font-semibold">JPN</span>
-                                        <span class="font-roboto text-muted text-[.7rem]">Japan</span>
-                                    </h2>
-                                </div>
-                                <div class="w-[100%] h-[1px] bg-line"></div>
-                                <div class="mt-3 flex justify-between text-[.65rem] uppercase text-muted font-roboto">
-                                    <span>Seat 22C</span>
-                                    <span>Gate 12</span>
-                                    <span>Class: Wanderer</span>
-                                </div>
-                            </div>
+                            <span class="inline-block w-10 text-muted">UKY</span>
+                            <span class="inline-block flex-1 px-3 text-cream">KYOTO</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">ASIA</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">BKK</span>
+                            <span class="inline-block flex-1 px-3 text-cream">BANGKOK</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">ASIA</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">JTR</span>
+                            <span class="inline-block flex-1 px-3 text-cream">SANTORINI</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">EUROPE</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">LIS</span>
+                            <span class="inline-block flex-1 px-3 text-cream">LISBON</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">EUROPE</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">RKV</span>
+                            <span class="inline-block flex-1 px-3 text-cream">REYKJAVIK</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">EUROPE</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">CPT</span>
+                            <span class="inline-block flex-1 px-3 text-cream">CAPE TOWN</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">AFRICA</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-panel px-4 py-2.5 font-roboto text-xs sm:text-sm border-b border-line">
+                        <div>
+                            <span class="inline-block w-10 text-muted">RAK</span>
+                            <span class="inline-block flex-1 px-3 text-cream">MARRAKECH</span>
+                        </div>
+                        <div>
+                            <span class="hidden w-14 sm:w-24 text-muted sm:inline-block">AFRICA</span>
+                            <span class="inline-block w-14 sm:w-24 text-right text-teal">ON TIME</span>
                         </div>
                     </div>
                 </div>
