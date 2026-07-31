@@ -3,7 +3,7 @@
 # ✈️ Travel Website
 
 ![Start Date](https://img.shields.io/badge/Started-21%20July%2C%202026-brightgreen?style=for-the-badge)
-![End Date](https://img.shields.io/badge/Completed-00%20July%2C%202026-blue?style=for-the-badge)
+![End Date](https://img.shields.io/badge/Completed-01%20August%2C%202026-blue?style=for-the-badge)
 
 ### _A Sleek, Fully Responsive Travel Website_
 
@@ -21,6 +21,6 @@
 
 <br/>
 
-<!-- ![Restaurant Website Preview](./assets/images/content/preview.png) -->
+![Restaurant Website Preview](./assets/images/content/preview.png)
 
 </div>
