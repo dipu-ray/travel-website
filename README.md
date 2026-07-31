@@ -1,5 +1,7 @@
 <div align="center">
 
+<div id="travel-website"></div>
+
 # ✈️ Travel Website
 
 ![Start Date](https://img.shields.io/badge/Started-21%20July%2C%202026-brightgreen?style=for-the-badge)
@@ -21,7 +23,7 @@
 
 <br/>
 
-![Restaurant Website Preview](./assets/images/content/preview.png)
+![Travel Website Preview](./assets/images/content/screenshots/preview.png)
 
 </div>
 
@@ -108,3 +110,115 @@ Frontend
 - 📅 Fixed navigation header with scroll-reactive background blur effects
 - 📱 Native Tailwind mobile offcanvas navigation drawer and hamburger menu
 - ♿ Screen-reader friendly structures with explicit ARIA roles and labels
+
+---
+
+## 📁 Project Structure
+
+```
+travel-website/                     → Git repo or project name
+│
+├── 📄 index.html                   → Home Page
+├── 📄 destinations.html            → Destinations Page
+├── 📄 packages.html                → Packages Page
+├── 📄 about.html                   → About Page
+├── 📄 gallery.html                 → Gallery Page
+├── 📄 journal.html                 → Journal Page
+├── 📄 book-now.html                → Booking & Contact Page
+│
+├── 📁 assets/
+│   ├── 📁 images/                  → All Images
+│   │   ├── 📁 backgrounds/         → Background Images
+│   │   ├── 📁 content/             → Pages Images
+│   ├── 📁 style/                   → CSS file
+│   │   ├── style.css               → Global styles & variables
+│
+└── 📄 README.md                 → Project Documentation & Overview
+```
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+|                        Home Page                         |                            Destinations Page                             |
+| :------------------------------------------------------: | :----------------------------------------------------------------------: |
+| ![Home](./assets/images/content/screenshots/home-ss.png) | ![Destinations](./assets/images/content/screenshots/destinations-ss.png) |
+
+|                          Packages Page                           |                        About Pages                         |
+| :--------------------------------------------------------------: | :--------------------------------------------------------: |
+| ![Packages](./assets/images/content/screenshots/packages-ss.png) | ![About](./assets/images/content/screenshots/about-ss.png) |
+
+|                          Gallery Page                          |                          Journal Page                          |
+| :------------------------------------------------------------: | :------------------------------------------------------------: |
+| ![Gallery](./assets/images/content/screenshots/gallery-ss.png) | ![Journal](./assets/images/content/screenshots/journal-ss.png) |
+
+|                          Booking Page                          |
+| :------------------------------------------------------------: |
+| ![Booking](./assets/images/content/screenshots/booking-ss.png) |
+
+</div>
+
+---
+
+## 🎨 Color Palette
+
+```css
+@import "tailwindcss";
+
+@theme {
+  --color-amber: #ffb84d; /* bg-amber, text-amber */
+  --color-magenta: #e8579b; /* bg-magenta, text-magenta */
+  --color-coral: #ff6b4a; /* bg-coral, text-coral */
+  --color-ink: #1a1c23; /* bg-ink, text-ink */
+  --color-cream: #f5f1e8; /* bg-cream, text-cream */
+  --color-line: #2a3350; /* bg-line, text-line */
+  --color-muted: #8d97b3; /* bg-muted, text-muted */
+  --color-teal: #2dd4bf; /* bg-teal, text-teal */
+  --color-dark: #121929; /* bg-dark, text-dark */
+  --color-dark2: #0b0f1a; /* bg-dark2, text-dark2 */
+  --color-dark-blue: #101624; /* bg-dark-blue, text-dark-blue */
+  --color-panel: #121826; /* bg-panel, text-panel */
+}
+```
+
+---
+
+## 📐 Responsive Breakpoints
+
+```css
+@media screen and (max-width: 1024px) {
+  /* Responsive for Large Tab or Small Laptop */
+}
+
+@media screen and (max-width: 360px) {
+  /* Responsive for Small Phone Sizes */
+}
+```
+
+---
+
+## 👤 Author
+
+<div align="center">
+
+**Dipu Ray**
+
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dipu-ray/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dipu-ray/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23FF5722.svg?style=for-the-badge&logo=firefox&logoColor=white)](https://dipu-ray.github.io/)
+
+</div>
+
+---
+
+<div align="center">
+
+### ⭐ Star this repo if you found it helpful!
+
+_Made with ❤️ and a lot of ☕_
+
+**[🔝 Back to Top](#travel-website)**
+
+</div>
