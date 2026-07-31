@@ -145,15 +145,18 @@
                     day with a first-draft route.</p>
                 <div class="mt-15 grid gap-10 lg:grid-cols-[1.3fr_0.9fr]">
                     <!-- Booking Form -->
-                    <form class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] overflow-hidden">
-                        <div class="flex items-center justify-between bg-panel2 px-6 py-3 font-roboto text-[11px] tracking-widest text-amber">
+                    <form
+                        class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] overflow-hidden">
+                        <div
+                            class="flex items-center justify-between bg-panel2 px-6 py-3 font-roboto text-[11px] tracking-widest text-amber">
                             <span>TRIP REQUEST FORM</span><span>REF #WD-2026</span>
                         </div>
                         <div class="p-6 sm:p-8">
                             <p class="font-roboto text-xs tracking-widest text-teal">PASSENGER INFO</p>
                             <div class="mt-4 grid gap-5 sm:grid-cols-2">
                                 <div>
-                                    <label for="fullname" class="font-roboto text-[10px] tracking-widest text-muted">FULL
+                                    <label for="fullname"
+                                        class="font-roboto text-[10px] tracking-widest text-muted">FULL
                                         NAME</label>
                                     <input id="fullname" required="" type="text"
                                         class="mt-1 w-full border-b border-line bg-transparent pb-2 text-sm text-cream focus:border-amber focus:outline-none">
@@ -202,13 +205,15 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="depart" class="font-roboto text-[10px] tracking-widest text-muted">DEPART
+                                    <label for="depart"
+                                        class="font-roboto text-[10px] tracking-widest text-muted">DEPART
                                         DATE</label>
                                     <input id="depart" type="date"
                                         class="mt-1 w-full border-b border-line bg-transparent pb-2 text-sm text-cream focus:border-amber focus:outline-none">
                                 </div>
                                 <div>
-                                    <label for="return" class="font-roboto text-[10px] tracking-widest text-muted">RETURN
+                                    <label for="return"
+                                        class="font-roboto text-[10px] tracking-widest text-muted">RETURN
                                         DATE</label>
                                     <input id="return" type="date"
                                         class="mt-1 w-full border-b border-line bg-transparent pb-2 text-sm text-cream focus:border-amber focus:outline-none">
@@ -231,18 +236,21 @@
 
                     <!-- Contact Info -->
                     <div class="space-y-6">
-                        <div class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] p-6">
+                        <div
+                            class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] p-6">
                             <p class="font-roboto text-xs tracking-widest text-coral">STUDIO</p>
                             <p class="mt-2 text-sm text-cream">House 12, Road 5, Banani<br>Dhaka 1213, Bangladesh
                             </p>
                         </div>
-                        <div class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] p-6">
+                        <div
+                            class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] p-6">
                             <p class="font-roboto text-xs tracking-widest text-teal">REACH US</p>
                             <p class="mt-2 text-sm text-cream">hello@wandr.travel</p>
                             <p class="text-sm text-cream">+880 1234 567 890</p>
                             <p class="mt-2 text-xs text-muted">Sun–Thu, 10:00–19:00 (GMT+6)</p>
                         </div>
-                        <div class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] relative h-48 overflow-hidden p-0">
+                        <div
+                            class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] relative h-48 overflow-hidden p-0">
                             <div
                                 class="flex h-full w-full items-center justify-center bg-gradient-to-br from-panel2 to-ink bg-grid">
                                 <div class="flex flex-col items-center gap-2 text-muted">
@@ -255,7 +263,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] p-6">
+                        <div
+                            class="relative bg-gradient-to-br from-[#131A29] to-[#101623] border border-[#2A3350] rounded-[18px] p-6">
                             <p class="font-roboto text-xs tracking-widest text-amber">FOLLOW ALONG</p>
                             <div class="mt-3 flex gap-3 font-roboto text-xs text-muted">
                                 <a href="#x" class="hover:text-amber">Instagram</a>
@@ -263,6 +272,61 @@
                                 <a href="#x" class="hover:text-amber">YouTube</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-panel border-b border-line">
+            <div class="mx-auto max-w-3xl px-5 py-16 md:px-8 md:py-24">
+                <p class="font-roboto text-xs tracking-widest text-magenta">FAQ</p>
+                <h2 class="mt-2 font-fraunces text-3xl font-semibold text-cream sm:text-4xl">Before you ask</h2>
+                <div class="mt-8">
+                    <div class="border-b border-line py-5">
+                        <button class="cursor-pointer flex w-full items-center justify-between text-left" data-i="0">
+                            <span class="font-fraunces text-lg text-cream">How far in advance should I book?</span>
+                            <svg class="h-5 w-5 shrink-0 text-amber transition-transform" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-panel mt-3 hidden text-sm text-muted">For custom itineraries we recommend 6-8
+                            weeks out, though we've built trips in under two weeks when needed.</div>
+                    </div>
+                    <div class="border-b border-line py-5">
+                        <button class="cursor-pointer flex w-full items-center justify-between text-left" data-i="1">
+                            <span class="font-fraunces text-lg text-cream">Can I change my dates after booking?</span>
+                            <svg class="h-5 w-5 shrink-0 text-amber transition-transform" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-panel mt-3 hidden text-sm text-muted">Yes — Business and First class fares
+                            include free date changes; Economy allows one free change within 7 days.</div>
+                    </div>
+                    <div class="border-b border-line py-5">
+                        <button class="cursor-pointer flex w-full items-center justify-between text-left" data-i="2">
+                            <span class="font-fraunces text-lg text-cream">Do you book flights too?</span>
+                            <svg class="h-5 w-5 shrink-0 text-amber transition-transform" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-panel mt-3 hidden text-sm text-muted">We can, or we're happy to just handle the
+                            ground itinerary if you'd rather use your own miles.</div>
+                    </div>
+                    <div class="border-b border-line py-5">
+                        <button class="cursor-pointer flex w-full items-center justify-between text-left" data-i="3">
+                            <span class="font-fraunces text-lg text-cream">What's included in the price?</span>
+                            <svg class="h-5 w-5 shrink-0 text-amber transition-transform" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-panel mt-3 hidden text-sm text-muted">Accommodation, ground transport, listed
+                            experiences and your fixer's support. Flights and meals are itemized separately unless
+                            noted.</div>
                     </div>
                 </div>
             </div>
